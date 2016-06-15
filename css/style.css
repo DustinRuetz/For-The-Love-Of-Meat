@@ -1,0 +1,507 @@
+.clearfix:after {
+  clear: both;
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body,
+h1,
+h2,
+blockquote,
+p,
+figure {
+  margin: 0;
+}
+
+button,
+input,
+label {
+  cursor: pointer;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+img {
+  display: block;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+a {
+  color: white;
+  transition: all 0.25s;
+}
+
+a:hover {
+  color: #75a558;
+}
+
+body {
+  background-image: url(../img/background.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  overflow-x: hidden;
+}
+
+button,
+input[type=submit] {
+  background-color: #75a558;
+  border: none;
+  color: #1e211c;
+  display: block;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 2.4rem;
+  padding: 20px 40px;
+  transition: all 0.25s;
+}
+
+button:hover,
+input[type=submit]:hover {
+  background-color: white;
+  color: #75a558;
+}
+
+button,
+h1,
+input[type=submit] {
+  text-transform: uppercase;
+}
+
+blockquote,
+label,
+p {
+  font-size: 2.0rem;
+}
+
+main {
+  height: calc(95vh - 20px);
+  position: relative;
+}
+
+.page-content {
+  background-color: rgba(30, 33, 28, 0.8);
+  margin: 20px auto 0 auto;
+  padding: 20px;
+  width: 65%;
+  min-width: 800px;
+}
+
+h1 {
+  font-size: 7.5rem;
+  letter-spacing: 0.15rem;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.page-quote,
+.quote-source {
+  letter-spacing: 0.15rem;
+  text-align: center;
+}
+
+.page-quote {
+  font-style: italic;
+  margin: 0 0 25px 0;
+}
+
+.quote-source {
+  margin-bottom: 50px;
+}
+
+.quote-source:before {
+  content: "-- ";
+}
+
+#start-btn {
+  margin: 0 auto;
+}
+
+.form-content {
+  position: relative;
+  z-index: 1;
+}
+
+label[for=bacon1]:hover path,
+label[for=bacon2]:hover path {
+  fill: #9f1313;
+}
+
+label[for=bacon1].user-selected path,
+label[for=bacon2].user-selected path {
+  fill: #9f1313;
+}
+
+label[for=groundBeef1] .food-image {
+  height: 95px;
+  width: 95px;
+}
+
+label[for=groundBeef1]:hover path {
+  fill: grey;
+}
+
+label[for=groundBeef1]:hover .groundBeef1-meat {
+  fill: #752314;
+}
+
+label[for=groundBeef1].user-selected path {
+  fill: grey;
+}
+
+label[for=groundBeef1].user-selected .groundBeef1-meat {
+  fill: #752314;
+}
+
+label[for=phSteak1]:hover path,
+label[for=tbSteak2]:hover path {
+  fill: #cd1818;
+}
+
+label[for=phSteak1].user-selected path,
+label[for=tbSteak2].user-selected path {
+  fill: #cd1818;
+}
+
+label[for=carrot1]:hover .carrot1-main,
+label[for=carrot1]:hover .carrot1-line {
+  fill: #ff7307;
+}
+
+label[for=carrot1]:hover .carrot1-stalk {
+  fill: #02b876;
+}
+
+label[for=sausage2]:hover path {
+  fill: #9c3922;
+}
+
+label[for=sausage2].user-selected path {
+  fill: #9c3922;
+}
+
+label[for=shrimp2]:hover path {
+  fill: #f3a97a;
+}
+
+label[for=shrimp2].user-selected path {
+  fill: #f3a97a;
+}
+
+label[for=turkeyLeg2]:hover path {
+  fill: #9c3922;
+}
+
+label[for=turkeyLeg2].user-selected path {
+  fill: #9c3922;
+}
+
+#recipeSection h2,
+#recipeSection p {
+  max-width: 420px;
+}
+
+#recipeSection h2 {
+  font-size: 3.6rem;
+}
+
+#recipeSection img {
+  margin: 20px 0;
+  max-width: 250px;
+}
+
+#recipeSection #reset-btn {
+  margin: 10px 0 0 0;
+}
+
+.ron-swanson {
+  visibility: hidden;
+  width: 100%;
+}
+
+.ron-swanson figure {
+  height: 400px;
+  transition: all 2s;
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+}
+
+.rs-small {
+  display: none;
+}
+
+#step1,
+#step2,
+#step3,
+#recipeSection {
+  display: none;
+  opacity: 0;
+}
+
+#step1,
+#step2 {
+  margin-bottom: 25px;
+}
+
+.choose-prompt {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+#step1Options,
+#step2Options {
+  display: flex;
+}
+
+.food-item {
+  margin-right: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.food-item p {
+  display: none;
+}
+
+.food-image {
+  height: 80px;
+  width: 80px;
+}
+
+.food-image path {
+  fill: white;
+}
+
+#step2Options label {
+  display: none;
+}
+
+footer {
+  background-color: #1e211c;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+}
+
+footer > a {
+  padding: 6px 6px 0 0;
+}
+
+footer > a path {
+  transition: all 0.25s;
+}
+
+footer > a:hover path {
+  fill: #75a558;
+}
+
+footer p {
+  font-size: 1.4rem;
+  margin: auto;
+  text-align: center;
+}
+
+footer svg {
+  height: 20px;
+  width: 20px;
+}
+
+footer svg path {
+  fill: white;
+}
+
+.info-modal {
+  background-color: rgba(30, 33, 28, 0.9);
+  color: #1e211c;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  transition: opacity 0.3s ease-in;
+  opacity: 0.0;
+}
+
+.info-modal h4 {
+  font-size: 2.4rem;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.info-modal p,
+.info-modal a,
+.info-modal li {
+  color: #1e211c;
+  font-size: 1.6rem;
+}
+
+.info-modal a:hover {
+  text-decoration: underline;
+}
+
+.info-modal ul {
+  padding-left: 20px;
+}
+
+.info-modal ul a {
+  color: #1e211c;
+}
+
+.info-modal ul a:hover {
+  text-decoration: underline;
+}
+
+.info-modal:target {
+  pointer-events: auto;
+  opacity: 1.0;
+}
+
+.info-modal > div {
+  padding: 20px;
+  border-radius: 10px;
+  margin: 5% auto;
+  background-color: white;
+  width: 90%;
+  max-width: 350px;
+  position: relative;
+}
+
+.close {
+  border-radius: 12px;
+  background-color: #75a558;
+  color: #1e211c;
+  width: 24px;
+  font-weight: bold;
+  line-height: 25px;
+  text-align: center;
+  text-decoration: none;
+  position: absolute;
+  top: -10px;
+  right: -12px;
+}
+
+.close:hover {
+  color: #1e211c;
+}
+
+@media screen and (max-width: 1080px) {
+  .ron-swanson figure {
+    height: auto;
+    display: flex;
+    align-items: flex-end;
+  }
+  .rs-large {
+    display: none;
+  }
+  .rs-small {
+    display: block;
+    max-height: 200px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    height: 95vh;
+  }
+  .page-content {
+    margin: 0;
+    min-width: 100%;
+  }
+  h1 {
+    font-size: 4.0rem;
+  }
+  blockquote,
+  label,
+  p {
+    font-size: 1.6rem;
+  }
+  button,
+  input[type=submit] {
+    font-size: 2.0rem;
+    padding: 10px 20px;
+  }
+  .quote-source {
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    height: 100vh;
+  }
+  .page-content {
+    padding: 10px;
+  }
+  .rs-small {
+    max-height: 150px;
+  }
+  button,
+  input[type=submit] {
+    margin: 0 auto;
+  }
+  .food-item {
+    margin-right: 10px;
+  }
+  .food-image {
+    height: 50px;
+    width: 50px;
+  }
+  .choose-prompt {
+    text-align: center;
+  }
+  #step1Options,
+  #step2Options {
+    justify-content: center;
+  }
+  label[for=groundBeef1] .food-image {
+    height: 65px;
+    width: 65px;
+  }
+  #recipeSection h2 {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+  #recipeSection img {
+    margin: 10px auto;
+    max-width: 200px;
+  }
+  #recipeSection p {
+    text-align: center;
+  }
+  #recipeSection #reset-btn {
+    margin: 10px auto 0 auto;
+  }
+  footer p {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 560px) {
+  footer > a {
+    padding: 0 5px 0 0;
+  }
+}

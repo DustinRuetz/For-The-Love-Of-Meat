@@ -1,0 +1,125 @@
+@media screen and (max-width: 1080px) {
+	.ron-swanson figure {
+		height: auto;
+		display: flex;
+		align-items: flex-end;
+	}
+
+	.rs-large {
+		display: none;
+	}
+
+	.rs-small {
+		display: block;
+		max-height: 200px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	main {
+		height: 95vh;
+	}
+
+	.page-content {
+		margin: 0;
+		min-width: 100%;
+	}
+
+	h1 {
+		font-size: 4.0rem;
+	}
+
+	blockquote,
+	label,
+	p {
+		font-size: 1.6rem;
+	}
+
+	button,
+	input[type=submit] {
+		font-size: 2.0rem;
+		padding: 10px 20px;
+	}
+
+	.quote-source {
+		margin-bottom: 25px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	main {
+		height: 100vh;
+	}
+	.page-content {
+		padding: 10px;
+	}
+
+	.rs-small {
+		max-height: 150px;
+	}
+
+	button,
+	input[type=submit] {
+		margin: 0 auto;
+	}
+
+	.food-item {
+		margin-right: 10px;
+	}
+
+	.food-image {
+		height: 50px;
+		width: 50px;
+	}
+	
+	.choose-prompt {
+		text-align: center;
+	}
+
+
+	#step1Options,
+	#step2Options {
+		justify-content: center;
+	}
+
+	label[for=groundBeef1] {
+		.food-image {
+		    height: 65px;
+	    	width: 65px;
+		}
+	}
+
+	#recipeSection {
+		h2 {
+			font-size: 2.4rem;
+			text-align: center;
+		}
+
+		img {
+			margin: 10px auto;
+			max-width: 200px;
+		}
+
+		p {
+			text-align: center;
+		}
+
+		#reset-btn {
+			margin: 10px auto 0 auto;
+		}
+	}
+
+	footer {
+		p {
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-height: 560px) {
+	footer {
+		> a {
+			padding: 0 5px 0 0;
+		}
+	}
+}
